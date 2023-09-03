@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: render-container
+    env: docker
+    repo: https://github.com/tkosht/render.git
+    branch: main
+    region: singapore
+    plan: free
+    rootDir: /home/devuser
+    buildCommand: "make"
+    startCommand: "make demo"
+    numInstances: 1
+    envVars:
+      - key: user_name
+        value: devuser
+      - key: group_name
+        value: devgroup
+
