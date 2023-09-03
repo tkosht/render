@@ -6,13 +6,16 @@ services:
     branch: main
     region: singapore
     plan: free
-    rootDir: /home/devuser
-    buildCommand: "make"
-    startCommand: "make demo"
+    rootDir: .
+    dockerfilePath: docker/Dockerfile.cpu
+    dockerContext: .
+    dockerCommand: /home/devuser/.local/bin/poetry run bash bin/run_demo.sh
     numInstances: 1
     envVars:
       - key: user_name
         value: devuser
       - key: group_name
         value: devgroup
+      - key: PORT
+        value: 8501
 
