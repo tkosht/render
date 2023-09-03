@@ -76,7 +76,7 @@ build-no-cache:
 
 reup: down up
 
-clean: backend-clean clean-logs clean-container
+clean: clean-logs clean-poetry clean-container
 
 clean-poetry:
 	rm -rf .venv poetry.lock
