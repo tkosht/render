@@ -1,0 +1,38 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "."
+        },
+        {
+            "name": "backend",
+            "path": "backend"
+        },
+        {
+            "name": "frontend",
+            "path": "frontend"
+        }
+    ],
+    "settings": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+        "[python]": {
+            "editor.defaultFormatter": "ms-python.black-formatter"
+        },
+        "python.formatting.provider": "none"
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-python.black-formatter",
+            "ms-python.flake8",
+            "ms-python.isort",
+            "ms-toolsai.jupyter",
+            "oderwat.indent-rainbow",
+            "donjayamanne.githistory",
+            "hediet.vscode-drawio",
+        ]
+    }
+}
