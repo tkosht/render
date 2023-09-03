@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: render-container
+    name: whalechat
     env: docker
     repo: https://github.com/tkosht/render.git
     branch: main
